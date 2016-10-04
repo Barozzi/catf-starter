@@ -32,9 +32,9 @@ namespace CATF_Starter
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "StarterTest", "As a Click® Portal user\nI want to be able to log into the site as the administrat" +
-                    "or\nSo that I can do cool administrative stuff.\nNote that this part is just a com" +
-                    "ment, essentially. You can put whatever you want here.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "StarterTest", "As a Click® Portal user\r\nI want to be able to log into the site as the administra" +
+                    "tor\r\nSo that I can do cool administrative stuff.\r\nNote that this part is just a " +
+                    "comment, essentially. You can put whatever you want here.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
