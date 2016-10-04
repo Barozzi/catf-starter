@@ -1,0 +1,12 @@
+﻿{
+	"stores": {
+		"dev": {
+			"url": "https://dev.example.com/IRB",
+			"admin_user": "administrator",
+			"admin_pass": "1234",
+			"users": {
+				"user1": "1234"
+			}
+		}	
+	}
+}

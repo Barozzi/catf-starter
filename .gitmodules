@@ -1,0 +1,6 @@
+[submodule "click-selenium"]
+	path = click-selenium
+	url = https://bitbucket.org/catspit/click-selenium.git
+[submodule "catf-specflow"]
+	path = catf-specflow
+	url = https://bitbucket.org/catspit/catf-specflow.git
