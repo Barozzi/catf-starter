@@ -1,7 +1,7 @@
 ﻿# CATF-Starter
 
 This project contains the structure required to begin implementing tests using the 
-Community Automated Testing Framework, CATF SpecFlow steps, and SpecFlow.
+Community Automated Testing Framework, CATF SpecFlow steps, and SpecFlow. The only prerequisite is a recent copy of Visual Studio on a computer that can access your store. These instructions were created with Visual Studio Community 2015, though any recent version of Visual Studio should work with minor changes.
 
 ## To use this project
 1. Install the SpecFlow and NUnity Test Adapter extensions into Visual Studio
