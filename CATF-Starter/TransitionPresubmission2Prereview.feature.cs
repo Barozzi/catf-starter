@@ -19,22 +19,20 @@ namespace CATF_Starter
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("StarterTest")]
-    public partial class StarterTestFeature
+    [NUnit.Framework.DescriptionAttribute("TransitionPresubmission2Prereview")]
+    public partial class TransitionPresubmission2PrereviewFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "StarterTest.feature"
+#line 1 "TransitionPresubmission2Prereview.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "StarterTest", "As a Click® Portal user\r\nI want to be able to log into the site as the administra" +
-                    "tor\r\nSo that I can do cool administrative stuff.\r\nNote that this part is just a " +
-                    "comment, essentially. You can put whatever you want here.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TransitionPresubmission2Prereview", "Test the state transition from Pre Submission to Pre Review", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -67,18 +65,23 @@ namespace CATF_Starter
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Log in as administrator")]
-        [NUnit.Framework.CategoryAttribute("starter")]
-        public virtual void LogInAsAdministrator()
+        [NUnit.Framework.DescriptionAttribute("SubmitIRBSubmission")]
+        public virtual void SubmitIRBSubmission()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log in as administrator", new string[] {
-                        "starter"});
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SubmitIRBSubmission", ((string[])(null)));
+#line 4
 this.ScenarioSetup(scenarioInfo);
-#line 9
+#line 5
  testRunner.Given("I am logged into the system as \"gbarozzi\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
- testRunner.Then("I expect to see a profile link with text \"Gregory Barozzi\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 6
+ testRunner.And("I have navigated to the workspace \"com.webridge.entity.Entity[OID[7647F33B3506B44" +
+                    "EA615C1D3446C0C4B]]\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 7
+ testRunner.And("The project is in the state \"Pre-Submission\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 8
+ testRunner.When("I execute the \"Submit\" activity", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 9
+ testRunner.Then("I expect the state to be \"Pre-Review\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

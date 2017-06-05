@@ -6,5 +6,5 @@
 
 @starter
 Scenario: Log in as administrator
-	Given I am logged into the system as "administrator"
-	Then I expect to see a profile link with text "System Administrator"
+	Given I am logged into the system as "gbarozzi"
+	Then I expect to see a profile link with text "Gregory Barozzi"

@@ -1,8 +1,8 @@
 ﻿{
 	"stores": {
 		"dev": {
-			"url": "https://qa.example.com/IRB",
-			"admin_user": "administrator",
+			"url": "https://mpclkasustage1.huronclick.com/IRBdev",
+			"admin_user": "gbarozzi",
 			"admin_pass": "1234",
 			"users": {
 				"user1": "1234"

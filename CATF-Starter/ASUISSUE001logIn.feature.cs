@@ -19,22 +19,20 @@ namespace CATF_Starter
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("StarterTest")]
-    public partial class StarterTestFeature
+    [NUnit.Framework.DescriptionAttribute("ASUISSUE001logIn")]
+    public partial class ASUISSUE001LogInFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "StarterTest.feature"
+#line 1 "ASUISSUE001logIn.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "StarterTest", "As a Click® Portal user\r\nI want to be able to log into the site as the administra" +
-                    "tor\r\nSo that I can do cool administrative stuff.\r\nNote that this part is just a " +
-                    "comment, essentially. You can put whatever you want here.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ASUISSUE001logIn", "Log into the site", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -67,17 +65,17 @@ namespace CATF_Starter
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Log in as administrator")]
-        [NUnit.Framework.CategoryAttribute("starter")]
-        public virtual void LogInAsAdministrator()
+        [NUnit.Framework.DescriptionAttribute("ASUISSUE001 Log In")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void ASUISSUE001LogIn()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log in as administrator", new string[] {
-                        "starter"});
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ASUISSUE001 Log In", new string[] {
+                        "mytag"});
+#line 5
 this.ScenarioSetup(scenarioInfo);
-#line 9
+#line 6
  testRunner.Given("I am logged into the system as \"gbarozzi\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
+#line 7
  testRunner.Then("I expect to see a profile link with text \"Gregory Barozzi\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

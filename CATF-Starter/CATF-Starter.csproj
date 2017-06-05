@@ -50,16 +50,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IRB_00010745.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IRB_00010745.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LogInAndGotoWorkspace.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogInAndGotoWorkspace.feature</DependentUpon>
+    </Compile>
     <Compile Include="StarterTest.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StarterTest.feature</DependentUpon>
     </Compile>
+    <Compile Include="TransitionPresubmission2Prereview.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransitionPresubmission2Prereview.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="IRB_00010745.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>IRB_00010745.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
+    <None Include="LogInAndGotoWorkspace.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LogInAndGotoWorkspace.feature.cs</LastGenOutput>
+    </None>
     <None Include="StarterTest.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>StarterTest.feature.cs</LastGenOutput>
@@ -70,6 +93,10 @@
     <None Include="StoreSettings\QA.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="TransitionPresubmission2Prereview.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TransitionPresubmission2Prereview.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
@@ -78,6 +105,10 @@
     <ProjectReference Include="..\catf-specflow\CATF-SpecFlow.csproj">
       <Project>{68b7c36f-9b81-47bb-ab32-393a4cd08597}</Project>
       <Name>CATF-SpecFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\click-selenium\Click-Selenium Framework.csproj">
+      <Project>{a64ce021-8e18-4ea2-ba7c-f29e7b45057e}</Project>
+      <Name>Click-Selenium Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
